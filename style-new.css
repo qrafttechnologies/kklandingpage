@@ -5,13 +5,56 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* CTA Button - Placed at Top */
-.cta-container {
-    background: #0044cc;
-    padding: 15px 0;
+/* Header Section (Banner + Logo) */
+.header-container {
+    background-color: #e0e0e0; /* Light Gray Background */
+    padding: 20px;
+    width: 100%;
     text-align: center;
+}
+
+.banner {
+    width: 80%; /* Adjust size */
+    max-height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Centered Hero Section */
+.hero {
+    background: white;
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto; /* Center vertically */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kakao Logo & CTA */
+.cta-container {
+    margin-top: 20px;
+}
+
+.kakao-logo {
+    width: 50px; /* Adjust Kakao logo size */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .cta-button {
@@ -29,27 +72,4 @@ body {
 .cta-button:hover {
     background: #e6b800;
     transform: scale(1.05);
-}
-
-/* Banner Styling */
-.banner {
-    width: 100%;
-    max-height: 150px; /* Smaller banner */
-    object-fit: cover;
-}
-
-/* Logo Styling */
-.logo {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-/* Hero Section */
-.hero {
-    background: white;
-    color: black;
-    padding: 20px 15px;
-    text-align: center;
 }
