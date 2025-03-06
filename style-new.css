@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+/* Style for the Banner */
+.banner {
+    width: 100%;
+    max-height: 250px;  /* Smaller banner */
+    object-fit: cover;   /* Crop to fit */
+}
+
+/* Resize the Logo */
+.logo {
+    width: 100px;  /* Smaller logo */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Hero Section - Ensures CTA Button is Visible */
+.hero {
+    background: #0044cc !important;
+    color: white !important;
+    padding: 50px 20px !important;
+    text-align: center !important;
+    position: relative !important;
+    top: -50px !important;  /* Moves up */
+    z-index: 10 !important; /* Ensures it's above other elements */
+}
+
+/* Call-to-Action Button - Always Visible */
+.cta-button {
+    display: inline-block !important;
+    background: #ffcc00 !important;
+    color: black !important;
+    padding: 15px 25px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+    transition: background 0.3s ease, transform 0.2s ease !important;
+    position: absolute !important;
+    top: 20px !important;  /* Places button near the top */
+    left: 50% !important;
+    transform: translateX(-50%) !important;  /* Centers button */
+}
+
+/* Button Hover Effect */
+.cta-button:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Hero Text */
+.hero h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
