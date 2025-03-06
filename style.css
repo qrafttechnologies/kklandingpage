@@ -16,27 +16,24 @@ header {
 /* Style for the Banner */
 .banner {
     width: 100%;  /* Full width */
-    height: auto; /* Keep aspect ratio */
-    display: block;
+    max-height: 300px; /* Adjust height */
+    object-fit: cover; /* Crop image properly */
 }
 
-/* Style for the Logo */
 .logo {
-    width: 150px; /* Adjust size */
+    width: 120px; /* Adjust size */
     height: auto;
     display: block;
     margin: 10px auto; /* Center the logo */
 }
 
-/* Hero Section */
 .hero {
     background: #0044cc;
     color: white;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 20px 20px; /* Reduce padding */
+    text-align: center;
+    position: relative;
+    top: -50px; /* Move it up */
 }
 
 /* Hero Text */
