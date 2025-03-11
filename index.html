@@ -43,6 +43,17 @@ src="https://www.facebook.com/tr?id=1001551755225599&ev=PageView&noscript=1"
             <a href="https://open.kakao.com/o/sRwhjRjh" class="cta-button">📩 무료 상담 받기</a>
         </div>
     </section>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var ctaButton = document.querySelector(".cta-button"); // Make sure this matches your button class
+
+    if (ctaButton) {
+      ctaButton.addEventListener("click", function() {
+        fbq('track', 'Lead'); // Tracks as a 'Lead' event
+      });
+    }
+  });
+</script>
 
 </body>
 </html>
